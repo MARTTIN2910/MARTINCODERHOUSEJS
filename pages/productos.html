@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" href="../assets/letra-m.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASSE | PRODUCTOS </title>
+</head>
+<body>
+    <nav>
+        <h1>MASSE</h1>
+        <div class="barra"></div>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./locales.html">LOCALES</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./devolucion.html">DEVOLUCIONES</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main class="productos-page">
+        <h2>Productos</h2>
+        <ul class="productos-list">
+            <!-- Productos con imágenes -->
+            <li>
+                <img src="../assets/campera nike.jpg" alt="Campera Nike" style="width: 200px; height: 200px;">
+                Campera Nike - $27600 <button onclick="agregarAlCarrito(0)">Agregar</button>
+            </li>
+            <li>
+                <img src="../assets/remera-adidas-rich-mnisi-mujer-blanca-10002ehe0322001-1.jpg" alt="Remera Adidas" style="width: 200px; height: 200px;">
+                Remera Adidas - $19799 <button onclick="agregarAlCarrito(1)">Agregar</button>
+            </li>
+            <li>
+                <img src="../assets/anorak.jpg" alt="Anorak Gang" style="width: 200px; height: 200px;">
+                Anorak Gang  - $12300 <button onclick="agregarAlCarrito(2)">Agregar</button>
+            </li>
+            <li>
+                <img src="../assets/1-31f64497bd917879e816881245940567-640-0.jpg" alt="Jean Oxford" style="width: 200px; height: 200px;">
+                Jean Oxford - $24600 <button onclick="agregarAlCarrito(3)">Agregar</button>
+            </li>
+            <li>
+                <img src="../assets/zapatillas-nike.jpg" alt="Zapatillas Nike AIR" style="width: 200px; height: 200px;">
+                Zapatillas Nike AIR - $60000 <button onclick="agregarAlCarrito(4)">Agregar</button>
+            </li>
+            <li>
+                <img src="../assets/remera-mujer-new-balance-accelerate-short-sleeve-running-wt11220vco_nb_41_i_2__1.jpg" alt="Remera New Ballance" style="width: 200px; height: 200px;">
+                Remera New Ballance - $15000 <button onclick="agregarAlCarrito(5)">Agregar</button>
+            </li>
+        </ul>
+        <h2>Carrito de Compras</h2>
+        <div id="carrito">
+        </div>
+        <!-- Agregar un elemento HTML para mostrar el total en la página -->
+        <p><span id="total">0</span></p>
+        <!-- Botón para quitar el último producto añadido al carrito -->
+        <button onclick="quitarDelCarrito()">Quitar Último Producto</button>
+        <!-- Botón para confirmar la compra -->
+        <button onclick="confirmarCompra()">Confirmar Compra</button>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
